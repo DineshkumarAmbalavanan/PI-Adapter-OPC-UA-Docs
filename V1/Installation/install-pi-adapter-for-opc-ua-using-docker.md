@@ -86,7 +86,7 @@ This topic provides examples of how to create a Docker container with the OPC UA
 	```bash
 	FROM ubuntu
 	WORKDIR /
-	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.0.0
+	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu66 libssl1.0.0
 	COPY opcuadockerstart.sh /
 	RUN chmod +x /opcuadockerstart.sh
 	ADD ./OpcUa_linux-x64.tar.gz .
